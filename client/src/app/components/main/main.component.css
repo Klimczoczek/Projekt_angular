@@ -1,0 +1,6 @@
+main{
+    height: 100vh; /* 94.2vh - widać footer*/
+    background: rgb(42,41,42);
+    background: radial-gradient(circle, rgba(42,41,42,1) 0%, rgba(95,85,79,1) 100%);
+    color: #f0e4cb;
+}
