@@ -9,12 +9,13 @@
             <button [ngClass]="{'wybrany': gamejoin == true}" (click)="gamejoin = true">JOIN</button>
         </div>
         @if (gamejoin == false){
-            <button>Create game</button>
-            <input type="text" id="gameid" style="visibility: hidden;">
+            <button class="Lobbybutton">Create Game</button>
+            <input type="text" id="" [ngStyle]="{'visibility':'hidden'}">
         }
         @else {
-            <button>Join game</button>
+            <button>Join Game</button>
             <input type="text" id="gameid">
+
         }
         
         

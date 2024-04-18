@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,6 +12,8 @@ import { FormsModule} from '@angular/forms';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+
+  constructor(private router: Router) { }
 
   nickname = 'Anonymous#'+Math.floor(Math.random() * 10000);
   gamejoin: boolean = false;
@@ -23,4 +26,5 @@ export class MainComponent {
       this.nickname = 'Anonymous#'+Math.floor(Math.random() * 10000);
     }
   }
+  
 }

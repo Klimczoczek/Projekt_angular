@@ -34,6 +34,29 @@ main{
     border-radius: 5px;
     padding-left: 1em;
     font-size: 1em;
+    background-color: #f1f1f1;
+}
+
+button{
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(95,85,79,1);
+    color: #f0e4cb;
+    cursor: pointer;
+}
+
+.buttons{
+    margin-bottom: 1em;
+}
+
+.buttons> button:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.buttons> button:last-child{
+    border-radius: 0 5px 5px 0;
 }
 
 .start label{
@@ -44,4 +67,17 @@ main{
 .wybrany{
     background: #f0e4cb;
     color: #2a292a;
+}
+
+
+.lobbybutton{
+    height: 2em;
+    display: inline-block;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(95,85,79,1);
+    color: #f0e4cb;
+    cursor: pointer;
 }
