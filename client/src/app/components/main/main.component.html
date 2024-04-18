@@ -1,3 +1,22 @@
 <main>
-    
+    <div class="start">
+        <h1>Nic</h1>
+        <p>Welcome, {{nickname}}</p>
+        <label for="nick">Enter your nickname</label>
+        <input type="text" id="nick" [(ngModel)]="nickname" (change)="ifnicknone()">
+        <div class="buttons">
+            <button [ngClass]="{'wybrany': gamejoin == false}" (click)="gamejoin = false">HOST</button>
+            <button [ngClass]="{'wybrany': gamejoin == true}" (click)="gamejoin = true">JOIN</button>
+        </div>
+        @if (gamejoin == false){
+            <button>Create game</button>
+            <input type="text" id="gameid" style="visibility: hidden;">
+        }
+        @else {
+            <button>Join game</button>
+            <input type="text" id="gameid">
+        }
+        
+        
+    </div>
 </main>

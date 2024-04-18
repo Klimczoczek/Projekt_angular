@@ -1,6 +1,47 @@
 main{
-    height: 100vh; /* 94.2vh - widać footer*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 52px); /* 94.2vh - widać footer*/
     background: rgb(42,41,42);
     background: radial-gradient(circle, rgba(42,41,42,1) 0%, rgba(95,85,79,1) 100%);
     color: #f0e4cb;
+}
+.start{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start p{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+
+}
+.start h1{
+    font-size: 6em;
+    margin-top: -1em;
+    
+}
+
+.start input{
+    width: 100%;
+    height: 4em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1em;
+    font-size: 1em;
+}
+
+.start label{
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.wybrany{
+    background: #f0e4cb;
+    color: #2a292a;
 }
