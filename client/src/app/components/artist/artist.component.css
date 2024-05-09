@@ -1,0 +1,27 @@
+.art{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #f0e4cb 3px solid;
+}
+
+img{
+    width: 9%;
+    height: fit-content;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #f0e4cb;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-right: 1.5em;
+    margin-bottom: 0.5em;
+
+}

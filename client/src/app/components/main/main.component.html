@@ -1,4 +1,11 @@
 <main>
+    <!-- <div class="error-bg" style="display: none;">
+        <div class="error">
+            <h1>Error</h1>
+            <p>CHUJ</p>
+            <button>OK</button>
+        </div>
+    </div> -->
     <div class="start">
         <h1>Nic</h1>
         <p>Welcome, {{nickname}}</p>
@@ -9,12 +16,12 @@
             <button [ngClass]="{'wybrany': gamejoin == true}" (click)="gamejoin = true">JOIN</button>
         </div>
         @if (gamejoin == false){
-            <button class="Lobbybutton">Create Game</button>
+            <button class="lobbybutton" (click)="gamelobby()" >Create Game</button>
             <input type="text" id="" [ngStyle]="{'visibility':'hidden'}">
         }
         @else {
-            <button>Join Game</button>
-            <input type="text" id="gameid">
+            <button class="lobbybutton" (click)="gamelobby()">Join Game</button>
+            <input type="text" [(ngModel)]="jcode">
 
         }
         

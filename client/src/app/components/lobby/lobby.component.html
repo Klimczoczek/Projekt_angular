@@ -1,0 +1,18 @@
+<main>
+    <div class="bdy">
+        <div class="settings">
+
+        </div>
+        <div class="choose">
+            <h1>Select Artist</h1>
+            <!-- <button (click) ="Szukajartyste()">asjfakjfgasf</button> -->
+            <input [(ngModel)]="artist" (ngModelChange)="piszemy()">
+            <div class="artists" *ngIf="czyartystawpisany">
+                <app-artist></app-artist>
+            </div>
+        </div>
+        <div class="players">
+
+        </div>
+    </div>
+</main>

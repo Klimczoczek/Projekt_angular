@@ -35,16 +35,23 @@ main{
     padding-left: 1em;
     font-size: 1em;
     background-color: #f1f1f1;
+    text-align: center;
 }
 
 button{
-    height: 2em;
+    height: 2.3em;
     border: none;
     border-radius: 5px;
     font-size: 1em;
     background-color: rgba(95,85,79,1);
     color: #f0e4cb;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(95,85,79,0.8);
+    transition: .3s;
+
 }
 
 .buttons{
@@ -69,15 +76,50 @@ button{
     color: #2a292a;
 }
 
+.wybrany:hover{
+    background: #c5bca7;
+    transition: .3s;
+}
+
 
 .lobbybutton{
-    height: 2em;
-    display: inline-block;
-    width: 50%;
+    height: 2.4em;
+    text-decoration: none;
+    text-align: center;
+    width: 15em;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.4em;
     background-color: rgba(95,85,79,1);
     color: #f0e4cb;
     cursor: pointer;
+    margin-bottom: 0.5em;
+}
+
+.error-bg{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.error{
+    background-color: rgba(95,85,79,1);
+    width: 35em;
+    height: 20em;
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.error>button{
+    background-color: rgb(42,41,42);
 }
