@@ -1,6 +1,25 @@
 <main>
     <div class="bdy">
         <div class="settings">
+            <h1>Songs select for</h1>
+            <h2>{{artistname}}</h2>
+            <div class="albums" *ngIf="artistchosen">
+                <div class="album" *ngFor="let album of albums; index as i">
+                    <!-- <p>{{i}}</p> -->
+                    <img src="{{album.images[0].url}}" alt="" srcset="">
+                    <a href="{{album.external_urls.spotify}}" target="_blank">{{album.name}} ({{album.total_tracks}} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                        <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+                        <path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+                        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+                      </svg>)</a>
+                </div>
+            </div>
+            
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eraser"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293z" />
+            </svg> -->
 
         </div>
         <div class="choose">
@@ -8,7 +27,13 @@
             <!-- <button (click) ="Szukajartyste()">asjfakjfgasf</button> -->
             <input [(ngModel)]="artist" (ngModelChange)="piszemy()">
             <div class="artists" *ngIf="czyartystawpisany">
-                <app-artist></app-artist>
+                <div class="artysci" *ngFor="let artist of artists">
+                    <!-- <p>{{}}</p> -->
+                    <app-artist [nazwa]="artist.name" [url]="artist.external_urls.spotify"
+                        [image]="SprawdzZdjecie(artist.images)" [id]="artist.id"
+                        (wybranie)="WybranoArtyste($event)"></app-artist>
+                </div>
+                <!-- <app-artist></app-artist> -->
             </div>
         </div>
         <div class="players">

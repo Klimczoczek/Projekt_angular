@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-artist',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './artist.component.css'
 })
 export class ArtistComponent {
+  @Input() nazwa: string | undefined;
+  @Input() url: string | undefined;
+  @Input() image: string | undefined;
+  @Input() id: string | undefined;
+  
+  @Output() wybranie = new EventEmitter<string>();
+
 
 }

@@ -76,3 +76,46 @@ button:hover{
 .hide{
     display: none;
 }
+
+.settings h1{
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.settings h2{
+    font-size: 1.6em;
+    margin-top: 0.2 em;
+    margin-bottom: 1em;
+}
+.settings .album{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #f0e4cb 3px solid;
+    margin-top: 0.4em;
+}
+
+.settings .album img{
+    width: 9%;
+    height: fit-content;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.albums{
+    overflow: auto;
+}
+
+.settings .album a{
+    text-align: center;
+    text-decoration: none;
+    color: #f0e4cb;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-right: 1.5em;
+    margin-bottom: 0.5em;
+
+}
