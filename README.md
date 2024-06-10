@@ -10,7 +10,7 @@ Aplikacja ta jest tylko wersją frontednową pod późniejszą rozbudowę o funk
 - `ng serve`
 
 ## Użycie
-### Po uruchomieniu poleca się otworzyć strone projektu w nowej karcie aby uniknąć problemy z api. Ukazuje nam się strona główna pozwalająca wybrać nick oraz stworzyć lub dołączyć do gry.
+### Po uruchomieniu poleca się otworzyć strone projektu w nowej karcie aby uniknąć problemu z api. Ukazuje nam się strona główna pozwalająca wybrać nick oraz stworzyć lub dołączyć do gry.
 ### Po utworzeniu gry ukazuje nam się lobby pozwalające wyszukać artyste poprzez [Spotify Api](https://developer.spotify.com/documentation/web-api). Po kliknięciu w artyste po lewej stronie ukazują nam się albumy danego artysty
 Reszta zostanie dodana po stworzeniu serwera dla tej aplikacji
 
@@ -28,7 +28,7 @@ Reszta zostanie dodana po stworzeniu serwera dla tej aplikacji
 - obsługa formularzy -> formularz dołączania do lobby
 
 ## Znane błędy
-Z niejasnego dla mnie powodu podczas wejścia na strone główną wyskakuje błąd w konsoli `localstorage is not defined` jednak nie wpływa on na działanie tego serwisu
+Z niejasnego dla mnie powodu podczas wejścia na strone główną wyskakuje błąd w konsoli `localstorage is not defined` jednak nie wpływa on na działanie tego serwisu jak i aplikacji
   
 
 
