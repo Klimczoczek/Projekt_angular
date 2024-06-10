@@ -1,7 +1,7 @@
 # Spotifyguess
 
 Jest to aplikacja wykonana przy wykorzystaniu technologii Angular.
-Aplikacja ta jest tylko wersją frontednową pod późniejszą rozbudowe o funkcjonalny serwer
+Aplikacja ta jest tylko wersją frontednową pod późniejszą rozbudowę o funkcjonalny serwer.
 
 ## Uruchomienie
 [Otwórz projekt na Stackblitz ⚡️](https://stackblitz.com/~/github.com/Klimczoczek/Projekt_angular) i wpisz następujące komendy:
